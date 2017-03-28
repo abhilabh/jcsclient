@@ -1,0 +1,18 @@
+NAME
+        describe-flow-logs - you can view flow log for jcs account.
+SYNOPSIS
+        describe-flow-logs --start_time <start time of flow log> --end-time <End time of flow log> [--direction-ing <Direction of flow>]
+        describe-flow-logs [help]
+
+DESCRIPTION
+      Describe flow logs will allow user to view flow logs of their own account-id having fields such as sourceIP, destIP, sport, dport etc. 
+
+      Mandatory arguments: --start-time --end-time --direction-ing 
+
+OPTIONS:
+       --start-time Specify start time from which you want to view the logs. Format of start time should be in DD-MM-YYYY HH:MM:SS in IST.
+       --end-time Specify end time to which you want to view the logs. Format of end time should be in DD-MM-YYYY HH:MM:SS in IST.
+       --direction_ing Specify 0 for ingress and 1 for egress.
+
+EXAMPLES:
+       jcs vpc describe-flow-logs  --direction-ing 1 --end-time "16-10-2016 19:11:10" --start-time "16-10-2016 19:06:00".

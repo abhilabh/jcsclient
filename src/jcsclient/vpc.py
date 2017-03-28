@@ -169,9 +169,9 @@ class Controller(object):
         return com.describe_addresses(self.url, self.verb, self.headers,
                 self.version, args)
 
-    def describe_flow_log(self, args):
+    def describe_flow_logs(self, args):
 
-        return com.describe_flow_log(self.url, self.verb, self.headers,
+        return com.describe_flow_logs(self.url, self.verb, self.headers,
                 self.version, args)
 
     def enable_flow_logs(self, args):
